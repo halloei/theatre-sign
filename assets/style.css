@@ -1,0 +1,59 @@
+@font-face {
+	font-family: 'MouseDeco';
+	src: url('MouseDeco.eot') format('embedded-opentype'),
+	     url('MouseDeco.woff2') format('woff2'),
+	     url('MouseDeco.woff') format('woff'),
+	     url('MouseDeco.ttf') format('truetype');
+}
+
+html, body {
+	width: 100%;
+	height: 100%;
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	background: linear-gradient(top, #020c6b 0%, #077cfb 50%, #020c6b 100%);
+	background: -webkit-linear-gradient(top, #020c6b 0%, #077cfb 50%, #020c6b 100%);
+	background: -moz-linear-gradient(top, #020c6b 0%, #077cfb 50%, #020c6b 100%);
+	background: -ms-linear-gradient(top, #020c6b 0%, #077cfb 50%, #020c6b 100%);
+	background: -o-linear-gradient(top, #020c6b 0%, #077cfb 50%, #020c6b 100%);
+	overflow: hidden;
+}
+
+.stagebox:after {
+	content: ".";
+	clear: both;
+	display: block;
+	visibility: hidden;
+	height: 0;
+}
+
+.stage {
+	width: 100%;
+	height: 6vh;
+	margin-top: 20.4vh;
+	float: left;
+	background-color: #000;
+}
+
+.textbox {
+	width: 100vw;
+	position: fixed;
+	top: 0;
+	margin-top: -2.5vh;
+	font-family: MouseDeco, sans-serif;
+	font-size: 25vh;
+	line-height: 26.38vh;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.textbox.aligned {
+	margin-top: 23.88vh;
+}
+
+.textbox span:not(.no-border) {
+	border: 1px solid rgba(0, 0, 0, .2);
+}
